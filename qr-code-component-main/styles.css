@@ -1,0 +1,146 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(212, 45%, 89%);
+  --GrayishBlue: hsl(220, 15%, 55%);
+  --DarkBlue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: "specimen", sans-serif;
+  background-color: var(--LightGray);
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CARD STYLES */
+.card {
+  border-radius: 15px;
+  max-width: 250px;
+  padding: 15px;
+  background-color: var(--White);
+}
+
+.qr-image {
+  border-radius: 15px;
+}
+
+.card-text-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-text-header {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card-text-body {
+  font-size: 15px;
+  color: var(--GrayishBlue);
+  margin: 20px auto;
+}
+
+@media (max-width: 400px) {
+  /* CSS rules */
+}
