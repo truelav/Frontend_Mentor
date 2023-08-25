@@ -144,4 +144,8 @@ img {
 
 @media (max-width: 400px) {
   /* CSS rules */
+
+  .info-inner-container {
+    font-size: 30px;
+  }
 }

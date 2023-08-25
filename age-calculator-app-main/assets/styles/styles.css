@@ -1,0 +1,250 @@
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  * {
+    margin: 0;
+  }
+
+/* @font-face {
+    font-family: "Poppins";
+    src: url('Poppins-Regular.ttf');
+} */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-purple: hsl(259, 100%, 65%);
+  --primary-red: hsl(0, 100%, 67%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-off-white: hsl(0, 0%, 94%);
+  --neutral-light-grey: hsl(0, 0%, 86%);
+  --neutral-smokey-grey: hsl(0, 1%, 44%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+
+  --input-font-size: 32px;
+  --error-font-size: 12px;
+}
+
+
+.page-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--neutral-light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: var(--neutral-white);
+  max-width: 800px;
+  height: 600px;
+  padding: 35px;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 3%;
+  border-top-right-radius: 3%;
+  border-top-left-radius: 3%;
+}
+
+/* Form Contaier Start*/
+
+.date-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.input-container {
+  display: grid;
+}
+
+label {
+  border-radius: 5px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--neutral-smokey-grey);
+  text-align: left;
+}
+
+.day-form-label,
+.month-form-label,
+.year-form-label {
+  
+}
+
+input {
+  border: solid 1px var(--neutral-light-grey);
+  border-radius: 5px;
+  padding: 12px 25px;
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--neutral-smokey-grey);
+}
+
+
+/* Arrow Container Start*/
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.arrow-line-container {
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-smokey-grey);
+}
+
+#button {
+  background-color: var(--primary-purple);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .arrow-icon-container {
+  background-color: var(--primary-purple);
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Info Container */
+
+.info-inner-container {
+  display: flex;
+  font-weight: 800;
+  font-size: 60px;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.years-value,
+.months-value,
+.days-value {
+  color: var(--primary-purple);
+}
+
+.years-text {
+  color: var(--neutral-off-black);
+  margin-left: 25px;
+}
+
+
+/* ERROR */
+.day-error-text,
+.month-error-text,
+.year-error-text {
+
+  font-size: var(--error-font-size);
+  font-style: italic;
+  padding-top: 10px;
+  display: none;
+}
+
+.active {
+  display: block;
+  color: var(--primary-red);
+}
+
+@media (max-width: 650px) {
+  /* CSS rules */
+
+  .main-container {
+    height: auto;
+    margin: auto 15px;
+  }
+
+  .date-form {
+    gap: 5px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .info-inner-container {
+    font-size: 26px;
+  }
+}
